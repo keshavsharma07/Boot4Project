@@ -209,9 +209,54 @@
 
     <!-- ****** offer section div ends******** -->
 
+
+    <!-- **************PROJECT DONE STARTS ***************** -->
+    <section class="project-work">
+        <div class="container headings text-center">
+            <p class="text-center font-weight-bold">MORE THAN 2000 WEBSITES</p>
+        </div>
+
+        <div class="container d-flex justify-content-around align-items-center text-center">
+            <div>
+                <h1 class="counter">1500</h1> 
+                <p>CMS INSTALLATION</p>
+            </div>
+            <div>
+                <h1 class="counter">2500</h1> 
+                <p>CMS INSTALLATION</p>
+            </div>
+            <div>
+                <h1 class="counter">700</h1> 
+                <p>CMS INSTALLATION</p>
+            </div>
+            <div>
+                <h1 class="counter">500</h1> 
+                <p>CMS INSTALLATION</p>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <!-- **************PROJECT DONE ENDS ***************** -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js" crossorigin="anonymous"></script>
+    <script src="jquery.counterup.min.js" crossorigin="anonymous"></script>
+
+    <script>
+        jQuery(document).ready(function($) {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 3000
+            });
+        });
+    </script>
 </body>
 
 </html>
