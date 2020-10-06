@@ -20,7 +20,7 @@
 
     <div class="header" id="topheader">
 
-        <nav class="navbar navbar-expand-lg fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
             <div class="container text-uppercase p-2">
                 <a class="navbar-brand font-weight-bold text-white" href="#">Keshav Sharma</a>
                 <button class="navbar-toggler toggle" type="button" data-toggle="collapse"
@@ -35,16 +35,16 @@
                             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Service</a>
+                            <a class="nav-link" href="#servicediv">Service</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Price</a>
+                            <a class="nav-link" href="#pricingdiv">Price</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="#newsletterid">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="#contactid">Contact</a>
                         </li>
                     </ul>
 
@@ -60,8 +60,8 @@
                     Singing My Heart Out
                 </p>
                 <div class="header-buttons">
-                    <a href="#">AboutUs</a>
-                    <a href="#">Contact</a>
+                    <a href="#newsletterid">AboutUs</a>
+                    <a href="#contactid">Contact</a>
                 </div>
             </div>
 
@@ -466,7 +466,7 @@
 
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-md-8 col-10 offset-lg-2 offset-md-2 col-1">
+                <div class="col-lg-8 col-md-8 col-10 offset-lg-2 offset-md-2 offset-1">
                     <form action="/action_page.php">
                         <div class="form-group">
 
@@ -533,6 +533,83 @@
     <!-- *********************NEWS LETTER Ends****************** -->
 
 
+    <!-- ***************************Footer Starts /************* -->
+
+
+        <footer class="footersection" id="footerdiv">
+            <div class="container">
+                <div class="row">
+                       <div class="col-lg-4 col-md-6 col-12 footer-div">
+                           <div>
+                               <h3>ABOUT KESHAV SHARMA</h3>
+                               <p>The World has seen LOREM LOREM LOREM LOREM LOREM LOREM LOREM LOREM </p>
+                           </div> 
+                       </div> 
+                       <div class="col-lg-4 col-md-6 col-12 footer-div1 text-center">
+                        <div>
+                            <h3>NAVIGATION LINKS</h3>
+                               <li><a href="#">Home</a></li> 
+                               <li><a href="#pricingdiv">Price</a></li> 
+                               <li><a href="#servicediv">Service</a></li> 
+                               <li><a href="#contactid">Contact</a></li> 
+
+
+
+                        </div> 
+                    </div> 
+                    <div class="col-lg-4 col-md-12 col-12 footer-div">
+                        <div>
+                            <h3>NEWSLETTER</h3>
+                            <p>The World has seen LOREM LOREM LOREM LOREM LOREM LOREM LOREM LOREM </p>
+                            
+                            <div class="container newsletter-main">
+                                <div class="row">
+                                    <div class="col-lg-12 col-12">
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control news-input" placeholder="Email" id="demo" name="email">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text">Subscribe</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                            </div>
+                    
+                      
+                        </div> 
+                    </div> 
+
+                </div>
+
+                <div class="mt-5 text-center">
+                    <p>Copyright 2020</p>
+
+                </div>
+                <div class="scrolltop float-right">
+                   
+                    <i class="fa fa-arrow-up" onclick="topFunction()" id="myBtn"></i>
+
+                </div>
+            </div>
+
+        </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ***************************Footer Ends /************* -->
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
         integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
@@ -551,6 +628,23 @@
             delay: 10,
             time: 2000
         });
+
+        mybutton =document.getElementById("myBtn");
+        window.onscroll =function() {scrollFunction()};
+
+        function scrollFunction(){
+            if(document.body.scrollTop>20 || document.documentElement.scrollTop >20){
+                mybutton.style.display="block";
+
+            }else{
+                mybutton.style.display="none";
+            }
+        }
+
+        function topFunction(){
+            document.body.scrollTop=0;
+            document.documentElement.scrollTop=0;
+        }
     </script>
 </body>
 
