@@ -402,3 +402,26 @@ i{
       ::placeholder{
           font-size: 0.85rem;
       }
+
+
+      /* **********************NEwsletter starts ***************** */
+
+
+      .newsletter{
+          width: 100%;
+          height: auto;
+          margin: 80px auto;
+      }
+      .news-input{
+          border-radius: 100px 0px 0px 100px!important ;
+          min-width: 150px;
+          min-height: 45px;
+      }
+
+      .input-group-text{
+          color: #fff;
+          background: #5bc0de;
+          border-radius: 0 100px 100px 0!important;
+          min-width: 130px;
+          min-height: 45px;
+      }
